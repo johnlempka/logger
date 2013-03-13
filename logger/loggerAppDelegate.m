@@ -43,4 +43,15 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+-(void)handleError:(NSError*) error
+{
+    NSString *theTitle = [NSString stringWithFormat:@"Error %i", [error code]];
+    NSString *theMessage = [error localizedDescription];
+    UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:theTitle message:theMessage delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    
+    [errorAlert show];
+    
+    NSLog(@"%@: %@",theTitle,theMessage);
+}
+
 @end

@@ -1,3 +1,4 @@
+
 //
 //  loggerTableViewViewController.h
 //  logger
@@ -8,6 +9,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface loggerTableViewViewController : UITableViewController
+@interface LogTableViewController : UITableViewController
+
+@property (strong, nonatomic) NSArray *theArray;
+
+-(void)setDataSourceArray:(NSArray*)dataArray;
 
 @end

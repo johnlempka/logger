@@ -10,4 +10,10 @@
 
 @interface Log : NSObject
 
+@property NSString *fileName;
+@property NSString *fileContents;
+
+-(id) initWithFileCalled:(NSString*)fileName;
+-(NSArray*) getArrayForFileContents;
+
 @end

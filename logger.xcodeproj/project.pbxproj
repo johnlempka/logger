@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1C85BB16F00DC200016C4F /* log.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C85BA16F00DC200016C4F /* log.txt */; };
+		9B1C85BF16F00F2B00016C4F /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C85BE16F00F2B00016C4F /* Log.m */; };
+		9B1C85C516F0588F00016C4F /* LogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C85C416F0588F00016C4F /* LogTableViewController.m */; };
 		9B36C83C16C876E80074EB4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B36C83B16C876E80074EB4F /* UIKit.framework */; };
 		9B36C83E16C876E80074EB4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B36C83D16C876E80074EB4F /* Foundation.framework */; };
 		9B36C84016C876E80074EB4F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B36C83F16C876E80074EB4F /* CoreGraphics.framework */; };
@@ -17,7 +20,7 @@
 		9B36C85016C876E80074EB4F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B36C84F16C876E80074EB4F /* Default@2x.png */; };
 		9B36C85216C876E80074EB4F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B36C85116C876E80074EB4F /* Default-568h@2x.png */; };
 		9B36C85516C876E80074EB4F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B36C85316C876E80074EB4F /* MainStoryboard.storyboard */; };
-		9B36C85816C876E80074EB4F /* loggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B36C85716C876E80074EB4F /* loggerViewController.m */; };
+		9B36C85816C876E80074EB4F /* LogTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B36C85716C876E80074EB4F /* LogTextViewController.m */; };
 		9B36C86016C876E80074EB4F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B36C85F16C876E80074EB4F /* SenTestingKit.framework */; };
 		9B36C86116C876E80074EB4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B36C83B16C876E80074EB4F /* UIKit.framework */; };
 		9B36C86216C876E80074EB4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B36C83D16C876E80074EB4F /* Foundation.framework */; };
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B1C85BA16F00DC200016C4F /* log.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = log.txt; path = ../../../Downloads/log.txt; sourceTree = "<group>"; };
+		9B1C85BD16F00F2B00016C4F /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		9B1C85BE16F00F2B00016C4F /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		9B1C85C316F0588F00016C4F /* LogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogTableViewController.h; sourceTree = "<group>"; };
+		9B1C85C416F0588F00016C4F /* LogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogTableViewController.m; sourceTree = "<group>"; };
 		9B36C83716C876E70074EB4F /* logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = logger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B36C83B16C876E80074EB4F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B36C83D16C876E80074EB4F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,8 +58,8 @@
 		9B36C84F16C876E80074EB4F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9B36C85116C876E80074EB4F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9B36C85416C876E80074EB4F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		9B36C85616C876E80074EB4F /* loggerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loggerViewController.h; sourceTree = "<group>"; };
-		9B36C85716C876E80074EB4F /* loggerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loggerViewController.m; sourceTree = "<group>"; };
+		9B36C85616C876E80074EB4F /* LogTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogTextViewController.h; sourceTree = "<group>"; };
+		9B36C85716C876E80074EB4F /* LogTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogTextViewController.m; sourceTree = "<group>"; };
 		9B36C85E16C876E80074EB4F /* loggerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loggerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B36C85F16C876E80074EB4F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9B36C86716C876E80074EB4F /* loggerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "loggerTests-Info.plist"; sourceTree = "<group>"; };
@@ -84,6 +92,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B1C85B816F00DB100016C4F /* documents */ = {
+			isa = PBXGroup;
+			children = (
+				9B1C85BA16F00DC200016C4F /* log.txt */,
+			);
+			name = documents;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		9B1C85BC16F00EDF00016C4F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				9B1C85BD16F00F2B00016C4F /* Log.h */,
+				9B1C85BE16F00F2B00016C4F /* Log.m */,
+			);
+			name = models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		9B1C85C016F0174800016C4F /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B36C85616C876E80074EB4F /* LogTextViewController.h */,
+				9B36C85716C876E80074EB4F /* LogTextViewController.m */,
+				9B1C85C316F0588F00016C4F /* LogTableViewController.h */,
+				9B1C85C416F0588F00016C4F /* LogTableViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		9B1C85C116F0175E00016C4F /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				9B36C84A16C876E80074EB4F /* loggerAppDelegate.h */,
+				9B36C84B16C876E80074EB4F /* loggerAppDelegate.m */,
+			);
+			name = delegates;
+			sourceTree = "<group>";
+		};
+		9B1C85C216F0177000016C4F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9B36C85316C876E80074EB4F /* MainStoryboard.storyboard */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		9B36C82C16C876E70074EB4F = {
 			isa = PBXGroup;
 			children = (
@@ -117,11 +172,11 @@
 		9B36C84116C876E80074EB4F /* logger */ = {
 			isa = PBXGroup;
 			children = (
-				9B36C84A16C876E80074EB4F /* loggerAppDelegate.h */,
-				9B36C84B16C876E80074EB4F /* loggerAppDelegate.m */,
-				9B36C85316C876E80074EB4F /* MainStoryboard.storyboard */,
-				9B36C85616C876E80074EB4F /* loggerViewController.h */,
-				9B36C85716C876E80074EB4F /* loggerViewController.m */,
+				9B1C85C216F0177000016C4F /* views */,
+				9B1C85C116F0175E00016C4F /* delegates */,
+				9B1C85C016F0174800016C4F /* controllers */,
+				9B1C85B816F00DB100016C4F /* documents */,
+				9B1C85BC16F00EDF00016C4F /* models */,
 				9B36C84216C876E80074EB4F /* Supporting Files */,
 			);
 			path = logger;
@@ -237,6 +292,7 @@
 				9B36C85016C876E80074EB4F /* Default@2x.png in Resources */,
 				9B36C85216C876E80074EB4F /* Default-568h@2x.png in Resources */,
 				9B36C85516C876E80074EB4F /* MainStoryboard.storyboard in Resources */,
+				9B1C85BB16F00DC200016C4F /* log.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +329,9 @@
 			files = (
 				9B36C84816C876E80074EB4F /* main.m in Sources */,
 				9B36C84C16C876E80074EB4F /* loggerAppDelegate.m in Sources */,
-				9B36C85816C876E80074EB4F /* loggerViewController.m in Sources */,
+				9B36C85816C876E80074EB4F /* LogTextViewController.m in Sources */,
+				9B1C85BF16F00F2B00016C4F /* Log.m in Sources */,
+				9B1C85C516F0588F00016C4F /* LogTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +506,7 @@
 				9B36C87216C876E80074EB4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B36C87316C876E80074EB4F /* Build configuration list for PBXNativeTarget "loggerTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +515,7 @@
 				9B36C87516C876E80074EB4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

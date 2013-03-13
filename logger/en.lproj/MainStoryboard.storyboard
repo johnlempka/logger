@@ -1,23 +1,116 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ftC-kM-Dl2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="ycd-oC-8GA">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ftC-kM-Dl2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iA6-wV-EAo">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="2Rw-5J-zCt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PaV-vt-iie" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-387" y="11"/>
+        </scene>
+        <!--Log Text View Controller-->
         <scene sceneID="5">
             <objects>
-                <viewController id="2" customClass="loggerViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="LogTextViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zc-xZ-6Sp">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="job-sV-swJ">
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fWN-n3-rg5"/>
+                                    <barButtonItem title="View as Table" id="lQs-Kn-eyR">
+                                        <connections>
+                                            <segue destination="ORl-le-oGf" kind="push" identifier="ViewAsTable" id="Frv-5X-fTo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LAp-gn-cme"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="job-sV-swJ" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="42j-hM-dC3"/>
+                            <constraint firstItem="job-sV-swJ" firstAttribute="top" secondItem="4zc-xZ-6Sp" secondAttribute="bottom" type="default" id="CsJ-eu-DE0"/>
+                            <constraint firstItem="job-sV-swJ" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="FOH-YX-x6U"/>
+                            <constraint firstItem="job-sV-swJ" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="YOc-aF-IdK"/>
+                            <constraint firstItem="4zc-xZ-6Sp" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="user" id="YfO-O0-oks"/>
+                            <constraint firstAttribute="trailing" secondItem="4zc-xZ-6Sp" secondAttribute="trailing" type="user" id="faN-aO-COr"/>
+                            <constraint firstItem="4zc-xZ-6Sp" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="jwv-Ny-uyJ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="MJ8-x9-pHi"/>
+                    <connections>
+                        <outlet property="theTextView" destination="4zc-xZ-6Sp" id="4W6-aM-Mhc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Log Table View Controller-->
+        <scene sceneID="Wsh-g1-mEf">
+            <objects>
+                <tableViewController id="ORl-le-oGf" customClass="LogTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="33" sectionHeaderHeight="22" sectionFooterHeight="22" id="rKj-WG-8EH">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="33" id="tci-P2-lhu">
+                                <rect key="frame" x="0.0" y="22" width="320" height="33"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ORl-le-oGf" id="WMk-mv-O3V"/>
+                            <outlet property="delegate" destination="ORl-le-oGf" id="J5V-l8-t3b"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Yyt-bm-RM2"/>
+                    <connections>
+                        <outlet property="view" destination="rKj-WG-8EH" id="C9A-0L-KsI"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ora-nf-7iT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405" y="19"/>
+        </scene>
     </scenes>
+    <classes>
+        <class className="LogTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LogTableViewController.h"/>
+        </class>
+        <class className="LogTextViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LogTextViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="theTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
