@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B1C85BB16F00DC200016C4F /* log.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C85BA16F00DC200016C4F /* log.txt */; };
+		528C572916F220C000AAE5E2 /* log.txt in Resources */ = {isa = PBXBuildFile; fileRef = 528C572816F220C000AAE5E2 /* log.txt */; };
 		9B1C85BF16F00F2B00016C4F /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C85BE16F00F2B00016C4F /* Log.m */; };
 		9B1C85C516F0588F00016C4F /* LogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C85C416F0588F00016C4F /* LogTableViewController.m */; };
 		9B36C83C16C876E80074EB4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B36C83B16C876E80074EB4F /* UIKit.framework */; };
@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9B1C85BA16F00DC200016C4F /* log.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = log.txt; path = ../../../Downloads/log.txt; sourceTree = "<group>"; };
+		528C572816F220C000AAE5E2 /* log.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = log.txt; sourceTree = "<group>"; };
 		9B1C85BD16F00F2B00016C4F /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		9B1C85BE16F00F2B00016C4F /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
 		9B1C85C316F0588F00016C4F /* LogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogTableViewController.h; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		9B1C85B816F00DB100016C4F /* documents */ = {
 			isa = PBXGroup;
 			children = (
-				9B1C85BA16F00DC200016C4F /* log.txt */,
+				528C572816F220C000AAE5E2 /* log.txt */,
 			);
 			name = documents;
 			path = ..;
@@ -292,7 +292,7 @@
 				9B36C85016C876E80074EB4F /* Default@2x.png in Resources */,
 				9B36C85216C876E80074EB4F /* Default-568h@2x.png in Resources */,
 				9B36C85516C876E80074EB4F /* MainStoryboard.storyboard in Resources */,
-				9B1C85BB16F00DC200016C4F /* log.txt in Resources */,
+				528C572916F220C000AAE5E2 /* log.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
